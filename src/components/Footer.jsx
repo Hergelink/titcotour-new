@@ -24,8 +24,9 @@ export default function Footer() {
               rel='noreferrer'
             >
               <StaticImage
-                src='../images/icons/instagram-icon.png'
+                src='../images/instagram-icon.png'
                 alt='instagram'
+                className='socialIcon'
               />
             </a>
             <a
@@ -34,8 +35,9 @@ export default function Footer() {
               rel='noreferrer'
             >
               <StaticImage
-                src='../images/icons/facebook-icon.png'
+                src='../images/facebook-icon.png'
                 alt='facebook'
+                className='socialIcon'
               />
             </a>
             <a
@@ -44,8 +46,9 @@ export default function Footer() {
               rel='noreferrer'
             >
               <StaticImage
-                src='../images/icons/linkedin-icon.png'
+                src='../images/linkedin-icon.png'
                 alt='linkedin'
+                className='socialIcon'
               />
             </a>
           </div>

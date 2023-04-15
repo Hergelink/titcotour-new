@@ -1,10 +1,7 @@
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
 import * as styles from '../styles/contact.module.css';
-import phone from '../images/icons/phone-icon.png';
-import email from '../images/icons/email-icon.png';
-import whatsapp from '../images/icons/whatsapp-icon.png';
-import fax from '../images/icons/fax-icon.png';
 
 export default function iletisim() {
   return (
@@ -20,20 +17,20 @@ export default function iletisim() {
             </h4>
             <div className={styles.contactDetails}>
               <div className={styles.contactCard}>
-                <img src={phone} alt='telefon' />
+                <StaticImage src='../images/phone-icon.png' alt='telefon' className={styles.contactIcon} />
                 <h5>
                   Telefon: <a href='tel:4447013'>444 70 13</a>
                 </h5>
               </div>
               <div className={styles.contactCard}>
-                <img src={email} alt='email' />
+                <StaticImage src='../images/email-icon.png' alt='email' className={styles.contactIcon} />
                 <h5>
                   E-posta:
                   <a href='mailto:sales@titcotour.com'>sales@titcotour.com</a>
                 </h5>
               </div>
               <div className={styles.contactCard}>
-                <img src={whatsapp} alt='whatsapp' />
+                <StaticImage src='../images/whatsapp-icon.png' alt='whatsapp' className={styles.contactIcon} />
                 <h5>
                   WhatsApp:
                   <a
@@ -46,7 +43,7 @@ export default function iletisim() {
                 </h5>
               </div>
               <div className={styles.contactCard}>
-                <img src={fax} alt='fax' />
+                <StaticImage src='../images/fax-icon.png' alt='fax' className={styles.contactIcon} />
                 <h5>
                   Fax:
                   <span>0 216 418 30 75</span>
