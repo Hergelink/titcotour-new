@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://titcotour.com/">
-    <img alt="Gatsby" src="https://titcotour.com/logo.png" width="60" />
+    <img alt="Titcotour" src="https://titcotour.com/logo.png" width="60" />
   </a>
 </p>
 <h1 align="center">
