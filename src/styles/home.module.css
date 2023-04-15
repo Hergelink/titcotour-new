@@ -39,8 +39,8 @@
   gap: 10px;
 }
 
-.callButon {
-  border: 0;
+.servicesButon {
+  border: 1px solid var(--blue);
   background-color: var(--blue);
   color: var(--lighBlue);
   padding: 10px 20px;
@@ -49,8 +49,15 @@
   cursor: pointer;
 }
 
-.callButon:hover {
+.servicesButon:hover {
   background-color: var(--darkBlue);
+}
+
+.heroButtonContainer a {
+  padding: 10px 20px;
+  border: 1px solid var(--darkBlue);
+  border-radius: 8px;
+  color: var(--darkBlue);
 }
 
 .heroButtonContainer a:hover {
@@ -114,11 +121,6 @@
   gap: 10px;
   padding: 8px;
 }
-
-/* .serviceCard img {
-  width: 50px;
-  height: 50px;
-} */
 
 .servicesIcons {
   width: 50px;

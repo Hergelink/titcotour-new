@@ -32,7 +32,7 @@ export default function Home() {
               firmalara ayrıcalıklı hizmet veriyoruz.
             </h3>
             <div className={styles.heroButtonContainer}>
-              <button className={styles.callButon} onClick={handleScroll}>
+              <button className={styles.servicesButon} onClick={handleScroll}>
                 Hizmetlerimiz
               </button>
               <a href='tel:4447013'>Hemen Arayın</a>
