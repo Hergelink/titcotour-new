@@ -1,13 +1,61 @@
-import React from 'react';
+import React from "react";
+import { graphql, Link } from "gatsby";
 import Layout from '../components/Layout';
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-export default function blog() {
+export default function Blog({ data }) {
+  const posts = data.allMarkdownRemark.edges;
+
   return (
     <Layout>
-      <div>Blog</div>
+      <div>
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug;
+          const featuredImage = getImage(node.frontmatter.featuredImage);
+          const { date, description } = node.frontmatter;
+          return (
+            <div key={node.fields.slug}>
+              {featuredImage && (
+                <GatsbyImage image={featuredImage} alt={title} />
+              )}
+              <h2>
+                <Link to={node.fields.slug}>{title}</Link>
+              </h2>
+              <small>{date}</small>
+              <p>{description}</p>
+            </div>
+          );
+        })}
+      </div>
     </Layout>
   );
 }
+
+export const query = graphql`
+query {
+  allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date(formatString: "MMMM DD, YYYY")
+          description
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(width: 200, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            }
+          }
+        }
+        fields {
+          slug
+        }
+        excerpt
+      }
+    }
+  }
+}
+`;
 
 export function Head({ title, description }) {
   const defaultTitle = 'Titco Tour - Blog';
