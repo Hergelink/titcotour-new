@@ -20,6 +20,7 @@ export default function Blog({ data }) {
 
   return (
     <Layout>
+      <h1 className={styles.pageTitle}>Blog</h1>
       <div className={styles.blogContainer}>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
@@ -42,7 +43,10 @@ export default function Blog({ data }) {
                 <small>{date}</small>
                 <p>
                   {truncatedDescription}
-                  <Link to={node.fields.slug} className={styles.continueReading}>
+                  <Link
+                    to={node.fields.slug}
+                    className={styles.continueReading}
+                  >
                     Devamını Oku...
                   </Link>
                 </p>
@@ -54,8 +58,6 @@ export default function Blog({ data }) {
     </Layout>
   );
 }
-
-
 
 export const query = graphql`
   query {

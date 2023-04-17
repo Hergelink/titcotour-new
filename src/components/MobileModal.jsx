@@ -13,7 +13,7 @@ export default function MobileModal() {
             </Link>
           </li>
           <li>
-            <Link className='modalLinks' to='/about'>
+            <Link className='modalLinks' to='/hakkimizda'>
               Hakkımızda
             </Link>
           </li>

@@ -29,7 +29,7 @@ export default function Header() {
             <Link className='desktopLinks' to='/'>
               Anasayfa
             </Link>
-            <Link className='desktopLinks' to='/about'>
+            <Link className='desktopLinks' to='/hakkimizda'>
               Hakkımızda
             </Link>
             <Link className='desktopLinks' to='/blog'>
