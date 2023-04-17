@@ -12,16 +12,38 @@ export default function Hakkımızda() {
       <div className={styles.aboutContainer}>
         <h1>Hakkımızda</h1>
         <h2>
-          {yearsOfOperation} yıldır, deneyimli ekibimizle, şirket ve kurumların
-          tüm seyahat, otel, araç kiralama, vize, sigorta ve organizasyon
-          ihtiyaçlarını karşılıyor, işlerini kolaylaştırıyor ve kârlılıklarını
-          arttırıyoruz.
+          {yearsOfOperation} yıldır turizm sektöründe hizmet veren Turizm
+          Acentamız, deneyimli ve profesyonel ekibimizle siz değerli
+          müşterilerimize hizmet sunmaktadır. Şirket ve kurumların tüm seyahat,
+          otel, araç kiralama, vize, sigorta ve organizasyon ihtiyaçlarını
+          karşılayarak, işlerini kolaylaştırmak ve kârlılıklarını arttırmak için
+          elimizden gelenin en iyisini yapıyoruz. Misyonumuz, müşterilerimize en
+          iyi seyahat deneyimini sunmak ve seyahat süreçlerinde her türlü
+          desteği sağlamaktır. Turizm dünyasındaki değişim ve gelişmelere ayak
+          uydurarak, her zaman güncel ve yenilikçi hizmetler sunmayı
+          hedefliyoruz.
+        </h2>
+        <h2>
+          Vizyonumuz, müşteri memnuniyetini en üst düzeye çıkarmak ve kaliteli
+          hizmetlerimizle sürekli büyümeyi sağlamaktır. Sürdürülebilir turizm
+          anlayışıyla hareket ederek, doğal ve kültürel değerlerimizi koruyarak,
+          tüm paydaşlarımızın beklentilerini karşılamak için çalışıyoruz.
+          Hizmetlerimiz:
+        </h2>
+        <h2>
+          Siz değerli müşterilerimize, seyahatlerinizde güvenilir, kaliteli ve
+          hızlı çözümler sunarak, iş süreçlerinizi verimli ve sorunsuz hale
+          getirmenize yardımcı olmak için buradayız. Turizm Acentamızla,
+          şirketinizin seyahat ihtiyaçlarını en üst düzeyde karşılayarak,
+          çalışanlarınızın dünyayı keşfetmesine ve iş hedeflerinize ulaşmanıza
+          destek oluyoruz.
         </h2>
         <StaticImage
           src='../images/ekip.jpg'
           alt='ekibimiz'
           className={styles.crewPhoto}
         />
+
         <h3 className={styles.servicesTitle}>Hizmetlerimiz:</h3>
         <div className={styles.servicesGrid}>
           <div className={styles.serviceCard}>
@@ -74,6 +96,7 @@ export default function Hakkımızda() {
           </div>
         </div>
       </div>
+
       <div className={styles.callToActionDiv}>
         <h3>Bizimle Çalışın</h3>
         <p>
@@ -103,25 +126,6 @@ export function Head({ title, description }) {
     <>
       <title>{seoTitle}</title>
       <meta name='description' content={seoDescription} />
-      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-      <meta charset='utf-8' />
-      <meta name='robots' content='index, follow' />
-      <meta name='language' content='tr' />
-      <meta name='author' content='Titcotour' />
-      <meta name='theme-color' content='#eff6ff' />
-      <link rel='icon' href='/favicon.ico' type='image/x-icon' />
-
-      <meta property='og:type' content='website' />
-      <meta property='og:url' content='https://titcotour.com/' />
-      <meta property='og:title' content={seoTitle} />
-      <meta property='og:description' content={seoDescription} />
-      <meta property='og:image' content='https://titcotour.com/logo.png' />
-
-      <meta property='twitter:card' content='summary_large_image' />
-      <meta property='twitter:url' content='https://titcotour.com/' />
-      <meta property='twitter:title' content={seoTitle} />
-      <meta property='twitter:description' content={seoDescription} />
-      <meta property='twitter:image' content='https://titcotour.com/logo.png' />
     </>
   );
 }
