@@ -1,0 +1,45 @@
+:root {
+  --blue: #004ca3;
+  --darkBlue: #003a7c;
+  --white: #eff6ff;
+  --lighBlue: #e6f1ff;
+}
+
+.blogContainer {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 32px 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+.blogPosts {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogPostsImage {
+  border-radius: 8px;
+}
+
+.blogPostsContent {
+  margin-top: 10px;
+}
+
+.continueReading {
+  margin-left: 2px;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 48em) {
+  .blogContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 54em) {
+  .blogContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

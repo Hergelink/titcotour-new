@@ -46,7 +46,7 @@ export default function Home() {
             <div>
               <StaticImage src='../images/hero-3.png' />
             </div>
-            <div className={styles.textContentDiv}>
+            <div>
               <h3>
                 {yearsOfOperation} yıldır işinizi kolaylaştırmak için buradayız
               </h3>
@@ -67,7 +67,11 @@ export default function Home() {
           <h2>Hizmetlerimiz</h2>
           <div className={styles.servicesGrid}>
             <div className={styles.serviceCard}>
-              <StaticImage src='../images/ticket.png' alt='uçak bileti' className={styles.servicesIcons} />
+              <StaticImage
+                src='../images/ticket.png'
+                alt='uçak bileti'
+                className={styles.servicesIcons}
+              />
               <h3>Uçak Bileti</h3>
               <p>
                 Ekibimiz, seyahatinize uygun uçuşları sizin için bulur,
@@ -77,7 +81,11 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.serviceCard}>
-              <StaticImage src='../images/hotel.png' alt='hotel' className={styles.servicesIcons} />
+              <StaticImage
+                src='../images/hotel.png'
+                alt='hotel'
+                className={styles.servicesIcons}
+              />
               <h3>Otel Rezervasyonu</h3>
               <p>
                 Ekibinizin konaklama ihtiyaçlarına göre en rahat, görüşme ve
@@ -87,7 +95,11 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.serviceCard}>
-              <StaticImage src='../images/car.png' alt='araba' className={styles.servicesIcons} />
+              <StaticImage
+                src='../images/car.png'
+                alt='araba'
+                className={styles.servicesIcons}
+              />
               <h3>Araç Kiralama</h3>
               <p>
                 Ekibinizin ihtiyaçlarına göre ulaşımlarını hızlı, konforlu ve
@@ -97,7 +109,11 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.serviceCard}>
-              <StaticImage src='../images/passport.png' alt='pasaport' className={styles.servicesIcons} />
+              <StaticImage
+                src='../images/passport.png'
+                alt='pasaport'
+                className={styles.servicesIcons}
+              />
               <h3>Vize Süreç Takibi</h3>
               <p>
                 Vize alma süreçlerin tümünü sizin adınıza üstleniyor, her
@@ -105,7 +121,11 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.serviceCard}>
-              <StaticImage src='../images/insurance.png' alt='sigorta' className={styles.servicesIcons} />
+              <StaticImage
+                src='../images/insurance.png'
+                alt='sigorta'
+                className={styles.servicesIcons}
+              />
               <h3>Seyahat Sigortası</h3>
               <p>
                 En uygun fiyata, kapsamı en iyi seyahat sigortalarını sizin için
@@ -113,7 +133,11 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.serviceCard}>
-              <StaticImage src='../images/meeting-1.png' alt='toplantı' className={styles.servicesIcons} />
+              <StaticImage
+                src='../images/meeting-1.png'
+                alt='toplantı'
+                className={styles.servicesIcons}
+              />
               <h3>Toplantı Organizasyonu</h3>
               <p>
                 Bayi toplantısı gibi kurumsal toplantılarınız için organizasyon

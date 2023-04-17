@@ -7,35 +7,31 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
-// module.exports = {
-//   plugins: [
-//     `gatsby-plugin-image`,
-//     `gatsby-plugin-sharp`,
-//     {
-//       resolve: `gatsby-source-filesystem`,
-//       options: {
-//         name: `images`,
-//         path: `${__dirname}/src/images`,
-//       },
-//     },
-//   ],
-//   siteMetadata: {
-//     title: 'Titco Tour - Kurumsal Seyahat Acentası',
-//     description:
-//       'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde, 34 yıldan uzun',
-//     copyright: 'Bütün hakları saklıdır.',
-//   },
-// };
 module.exports = {
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`, `avif`],
+          placeholder: `blurred`,
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogImages`,
+        path: `${__dirname}/src/images/blog`,
       },
     },
     {
@@ -49,6 +45,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-relative-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {

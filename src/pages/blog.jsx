@@ -1,28 +1,52 @@
-import React from "react";
-import { graphql, Link } from "gatsby";
+import React from 'react';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/Layout';
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
+import * as styles from '../styles/blog.module.css';
 
 export default function Blog({ data }) {
   const posts = data.allMarkdownRemark.edges;
 
+  const truncateDescription = (description, maxLength) => {
+    if (!description || description.length <= maxLength) {
+      return description;
+    }
+
+    const truncated = description.slice(0, maxLength);
+    const lastSpaceIndex = truncated.lastIndexOf(' ');
+
+    return truncated.slice(0, lastSpaceIndex);
+  };
+
   return (
     <Layout>
-      <div>
+      <div className={styles.blogContainer}>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
-          const featuredImage = getImage(node.frontmatter.featuredImage);
+          const featuredImage = node.frontmatter.featuredImage;
           const { date, description } = node.frontmatter;
+          const truncatedDescription = truncateDescription(description, 200);
           return (
-            <div key={node.fields.slug}>
+            <div key={node.fields.slug} className={styles.blogPosts}>
               {featuredImage && (
-                <GatsbyImage image={featuredImage} alt={title} />
+                <GatsbyImage
+                  image={featuredImage.childImageSharp.gatsbyImageData}
+                  alt={title}
+                  className={styles.blogPostsImage}
+                />
               )}
-              <h2>
-                <Link to={node.fields.slug}>{title}</Link>
-              </h2>
-              <small>{date}</small>
-              <p>{description}</p>
+              <div className={styles.blogPostsContent}>
+                <h2>
+                  <Link to={node.fields.slug}>{title}</Link>
+                </h2>
+                <small>{date}</small>
+                <p>
+                  {truncatedDescription}
+                  <Link to={node.fields.slug} className={styles.continueReading}>
+                    Devamını Oku...
+                  </Link>
+                </p>
+              </div>
             </div>
           );
         })}
@@ -31,31 +55,60 @@ export default function Blog({ data }) {
   );
 }
 
+
+
 export const query = graphql`
-query {
-  allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          date(formatString: "MMMM DD, YYYY")
-          description
-          featuredImage {
-            childImageSharp {
-              gatsbyImageData(width: 200, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+  query {
+    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            description
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
             }
           }
+          fields {
+            slug
+          }
+          excerpt
         }
-        fields {
-          slug
-        }
-        excerpt
       }
     }
   }
-}
 `;
+
+// working code
+// export const query = graphql`
+//   query {
+//     allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+//       edges {
+//         node {
+//           id
+//           frontmatter {
+//             title
+//             date(formatString: "MMMM DD, YYYY")
+//             description
+//             featuredImage {
+//               childImageSharp {
+//                 gatsbyImageData(layout: FULL_WIDTH)
+//               }
+//             }
+//           }
+//           fields {
+//             slug
+//           }
+//           excerpt
+//         }
+//       }
+//     }
+//   }
+// `;
 
 export function Head({ title, description }) {
   const defaultTitle = 'Titco Tour - Blog';
@@ -70,7 +123,7 @@ export function Head({ title, description }) {
       <title>{seoTitle}</title>
       <meta name='description' content={seoDescription} />
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-      <meta charset='utf-8' />
+      <meta charSet='utf-8' />
       <meta name='robots' content='index, follow' />
       <meta name='language' content='tr' />
       <meta name='author' content='Titcotour' />
