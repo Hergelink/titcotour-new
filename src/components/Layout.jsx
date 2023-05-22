@@ -29,6 +29,7 @@ export function Head({ title, description }) {
       <meta charset='utf-8' />
       <meta name='robots' content='index, follow' />
       <meta name='language' content='tr' />
+      <html lang='tr' />
       <meta lang='tr' />
       <meta name='author' content='Titcotour' />
       <meta name='theme-color' content='#eff6ff' />

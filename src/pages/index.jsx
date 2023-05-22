@@ -21,6 +21,7 @@ export default function Home() {
             <StaticImage
               src='../images/hero-1.png'
               className={styles.heroImage}
+              alt=''
             />
           </div>
           <div className={styles.heroContextDiv}>
@@ -44,7 +45,7 @@ export default function Home() {
         <div className={styles.textContentWrapper}>
           <div className={styles.textContent}>
             <div>
-              <StaticImage src='../images/hero-3.png' />
+              <StaticImage src='../images/hero-3.png' alt=''/>
             </div>
             <div>
               <h3>
@@ -79,6 +80,25 @@ export default function Home() {
                 yerinize yapar. Seyahatiniz iptal olduğunda ise bize bir telefon
                 açmanız yeterlidir.
               </p>
+              <div className={styles.contactIconsDiv}>
+                <a href='tel:4447013' className={styles.quickActionLinks}>
+                  <StaticImage
+                    src='../images/phone-icon.png'
+                    alt='Telefon'
+                    className={styles.quickCall}
+                  />
+                </a>
+                <a
+                  href='mailto:sales@titcotour.com'
+                  className={styles.quickActionLinks}
+                >
+                  <StaticImage
+                    src='../images/envelope.png'
+                    alt='Email'
+                    className={styles.quickMail}
+                  />
+                </a>
+              </div>
             </div>
             <div className={styles.serviceCard}>
               <StaticImage
@@ -93,6 +113,25 @@ export default function Home() {
                 seçeneklerini sizin için derleyip önererek, rezervasyon sürecini
                 yönetiyoruz.
               </p>
+              <div className={styles.contactIconsDiv}>
+                <a href='tel:4447013' className={styles.quickActionLinks}>
+                  <StaticImage
+                    src='../images/phone-icon.png'
+                    alt='Telefon'
+                    className={styles.quickCall}
+                  />
+                </a>
+                <a
+                  href='mailto:otel@titcotour.com'
+                  className={styles.quickActionLinks}
+                >
+                  <StaticImage
+                    src='../images/envelope.png'
+                    alt='Email'
+                    className={styles.quickMail}
+                  />
+                </a>
+              </div>
             </div>
             <div className={styles.serviceCard}>
               <StaticImage
@@ -107,6 +146,25 @@ export default function Home() {
                 sizin adınıza yönetiyor, aracın teslim süreçlerini
                 kolaylaştırıyoruz.
               </p>
+              <div className={styles.contactIconsDiv}>
+                <a href='tel:4447013' className={styles.quickActionLinks}>
+                  <StaticImage
+                    src='../images/phone-icon.png'
+                    alt='Telefon'
+                    className={styles.quickCall}
+                  />
+                </a>
+                <a
+                  href='mailto:otel@titcotour.com'
+                  className={styles.quickActionLinks}
+                >
+                  <StaticImage
+                    src='../images/envelope.png'
+                    alt='Email'
+                    className={styles.quickMail}
+                  />
+                </a>
+              </div>
             </div>
             <div className={styles.serviceCard}>
               <StaticImage
@@ -119,6 +177,25 @@ export default function Home() {
                 Vize alma süreçlerin tümünü sizin adınıza üstleniyor, her
                 aşamada destek oluyoruz.
               </p>
+              <div className={styles.contactIconsDiv}>
+                <a href='tel:4447013' className={styles.quickActionLinks}>
+                  <StaticImage
+                    src='../images/phone-icon.png'
+                    alt='Telefon'
+                    className={styles.quickCall}
+                  />
+                </a>
+                <a
+                  href='mailto:hakan@titcotour.com'
+                  className={styles.quickActionLinks}
+                >
+                  <StaticImage
+                    src='../images/envelope.png'
+                    alt='Email'
+                    className={styles.quickMail}
+                  />
+                </a>
+              </div>
             </div>
             <div className={styles.serviceCard}>
               <StaticImage
@@ -131,6 +208,25 @@ export default function Home() {
                 En uygun fiyata, kapsamı en iyi seyahat sigortalarını sizin için
                 takip ediyoruz.
               </p>
+              <div className={styles.contactIconsDiv}>
+                <a href='tel:4447013' className={styles.quickActionLinks}>
+                  <StaticImage
+                    src='../images/phone-icon.png'
+                    alt='Telefon'
+                    className={styles.quickCall}
+                  />
+                </a>
+                <a
+                  href='mailto:sales@titcotour.com'
+                  className={styles.quickActionLinks}
+                >
+                  <StaticImage
+                    src='../images/envelope.png'
+                    alt='Email'
+                    className={styles.quickMail}
+                  />
+                </a>
+              </div>
             </div>
             <div className={styles.serviceCard}>
               <StaticImage
@@ -143,6 +239,25 @@ export default function Home() {
                 Bayi toplantısı gibi kurumsal toplantılarınız için organizasyon
                 hizmeti sunuyoruz.
               </p>
+              <div className={styles.contactIconsDiv}>
+                <a href='tel:4447013' className={styles.quickActionLinks}>
+                  <StaticImage
+                    src='../images/phone-icon.png'
+                    alt='Telefon'
+                    className={styles.quickCall}
+                  />
+                </a>
+                <a
+                  href='mailto:otel@titcotour.com'
+                  className={styles.quickActionLinks}
+                >
+                  <StaticImage
+                    src='../images/envelope.png'
+                    alt='Email'
+                    className={styles.quickMail}
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -152,7 +267,7 @@ export default function Home() {
         <div className={styles.callToActionWrapper}>
           <div className={styles.callToAction}>
             <div>
-              <StaticImage src='../images/hero-2.png' />
+              <StaticImage src='../images/hero-2.png' alt=''/>
             </div>
             <div className={styles.callToActionContext}>
               <h3>Hizmetlerimiz Bunlarla Sınırlı Değil</h3>

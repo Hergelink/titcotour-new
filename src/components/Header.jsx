@@ -11,6 +11,12 @@ export default function Header() {
     setMenuState(!menuState);
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      toggleMobileMenu();
+    }
+  };
+
   return (
     <header>
       <div className='headerContainer'>
@@ -40,7 +46,13 @@ export default function Header() {
             </Link>
           </nav>
         </div>
-        <div className='mobileMenuBtn' onClick={toggleMobileMenu}>
+        <div
+          className='mobileMenuBtn'
+          onClick={toggleMobileMenu}
+          role='button'
+          tabIndex={0}
+          onKeyDown={handleKeyDown}
+        >
           <span className='hamburger'></span>
           <span className='hamburger'></span>
           <span className='hamburger'></span>

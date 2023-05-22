@@ -123,4 +123,24 @@
   .serviceCard h3 {
     font-size: 1.2rem;
   }
+
+  /* call to action */
+  
+  .callToActionDiv h3 {
+    font-size: 1.4rem;
+  }
+  
+  .callToActionDiv p {
+    font-size: 1.2rem;
+  }
+  
+  .callToActionBtn {
+    border: 0;
+    background-color: var(--white);
+    color: #003a7c;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
 }

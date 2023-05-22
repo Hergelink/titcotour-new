@@ -239,6 +239,7 @@ section {
 
   .desktopLinks:hover {
     color: var(--darkBlue);
+    text-decoration: underline ;
   }
 
   .phoneBtn {
