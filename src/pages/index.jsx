@@ -26,12 +26,12 @@ export default function Home() {
           </div>
           <div className={styles.heroContextDiv}>
             <h1>Kurumsal Seyahat Acentanız</h1>
-            <h3>
+            <h2>
               Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta
               işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet
               yelpazesinde, {yearsOfOperation} yıldan uzun süredir kurumsal
               firmalara ayrıcalıklı hizmet veriyoruz.
-            </h3>
+            </h2>
             <div className={styles.heroButtonContainer}>
               <button className={styles.servicesButon} onClick={handleScroll}>
                 Hizmetlerimiz

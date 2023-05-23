@@ -42,6 +42,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'tr',
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [

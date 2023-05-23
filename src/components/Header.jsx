@@ -5,6 +5,8 @@ import '../styles/global.css';
 import MobileModal from './MobileModal';
 
 export default function Header() {
+  const currentYear = new Date().getFullYear();
+  const yearsOfOperation = currentYear - 1989;
   const [menuState, setMenuState] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -28,6 +30,7 @@ export default function Header() {
               className='headerLogo'
             />
           </Link>
+          <span className='yearsOfOperation'>{yearsOfOperation}. Yıl</span>
         </div>
 
         <div className='desktopMenu'>
@@ -46,17 +49,18 @@ export default function Header() {
             </Link>
           </nav>
         </div>
-        <div
+        <button
           className='mobileMenuBtn'
           onClick={toggleMobileMenu}
           role='button'
           tabIndex={0}
           onKeyDown={handleKeyDown}
+          aria-label='Mobil menüyü açın'
         >
           <span className='hamburger'></span>
           <span className='hamburger'></span>
           <span className='hamburger'></span>
-        </div>
+        </button>
         <a className='phoneBtn' href='tel:4447013'>
           +444 70 13
         </a>

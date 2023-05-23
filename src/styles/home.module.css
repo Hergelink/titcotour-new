@@ -154,6 +154,10 @@
   border-radius: 50%;
 }
 
+.quickActionLinks:hover {
+  background-color: var(--darkBlue);
+}
+
 .quickCall, .quickMail{
   width: 25px;
   height: 25px;

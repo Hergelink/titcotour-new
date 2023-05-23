@@ -12,8 +12,8 @@ export default function iletisim() {
             <h1>İletişim Bilgileri</h1>
             <h4>
               Güvenilir seyahat partneriniz olarak bize her şekilde
-              ulaşabilirsiniz. Sizlerle konuşmaktan, tanışmaktan, çözüm
-              sunmaktan ve memnun etmekten mutluluk duyarız.
+              ulaşabilirsiniz. Sizlerle konuşmaktan, tanışmaktan ve çözüm
+              sunmaktan mutluluk duyarız.
             </h4>
             <div className={styles.contactDetails}>
               <div className={styles.contactCard}>

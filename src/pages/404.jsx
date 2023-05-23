@@ -1,12 +1,21 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from '../components/Layout';
+import * as styles from '../styles/404.module.css';
 
 export default function NotFound() {
   return (
     <Layout>
-      <div>
-        <h2>404</h2>
-        <p>Sayfa bulunamadi</p>
+      <div className={styles.errorContainer}>
+        <h1>404</h1>
+        <span></span>
+        <h2>Aradığınız Sayfa Bulunamadı</h2>
+        <div className={styles.linksDiv}>
+        <Link to='/'>Ana Sayfa</Link>
+        <Link to='/hakkimizda'>Hakkımızda</Link>
+        <Link to='/blog'>Blog</Link>
+        <Link to='/iletisim'>İletişim</Link>
+        </div>
       </div>
     </Layout>
   );
