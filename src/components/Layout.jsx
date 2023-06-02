@@ -31,7 +31,7 @@ export function Head({ title, description }) {
       <meta name='language' content='tr' />
       <meta lang='tr' />
       <meta name='author' content='Titcotour' />
-      <meta name='theme-color' content='#eff6ff' />
+      <meta name='theme-color' content='#004ca3' />
       <link rel='icon' href='/favicon.ico' type='image/x-icon' />
 
       <meta property='og:type' content='website' />

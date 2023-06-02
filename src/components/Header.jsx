@@ -6,7 +6,7 @@ import MobileModal from './MobileModal';
 
 export default function Header() {
   const currentYear = new Date().getFullYear();
-  const yearsOfOperation = currentYear - 1989;
+  const yearsOfOperation = currentYear - 1987;
   const [menuState, setMenuState] = useState(false);
 
   const toggleMobileMenu = () => {

@@ -8,7 +8,7 @@ import * as styles from '../styles/home.module.css';
 export default function Home() {
   const ref = useRef(null);
   const currentYear = new Date().getFullYear();
-  const yearsOfOperation = currentYear - 1989;
+  const yearsOfOperation = currentYear - 1987;
   const handleScroll = () => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
