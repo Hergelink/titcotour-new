@@ -5,6 +5,12 @@
   --darkBlue: #003a7c;
   --white: #eff6ff;
   --lighBlue: #e6f1ff;
+
+  /* new colors */
+
+  --black: #000000;
+  --light-white: #fffdfc;
+  --light-grey: #f5f3f2;
 }
 /* CSS RESET */
 
@@ -17,7 +23,7 @@
   box-sizing: border-box;
   font-family: 'DM Sans', sans-serif;
   text-decoration: none;
-  color: var(--blue);
+  color: var(--black);
 }
 /*
     2. Remove default margin
@@ -32,7 +38,7 @@
 html,
 body {
   height: 100%;
-  background-color: var(--white);
+  background-color: var(--light-grey);
 }
 /*
     Typographic tweaks!
@@ -264,6 +270,13 @@ section {
     padding: 8px 16px;
     border-radius: 8px;
     font-weight: 700;
+  }
+
+  /* Main */
+
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   /* Footer */

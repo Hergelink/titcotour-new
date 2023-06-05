@@ -39,7 +39,7 @@ export default function Hakkımızda() {
           destek oluyoruz.
         </h2>
         <StaticImage
-          src='../images/ekip3.jpeg'
+          src='../images/ekip.jpg'
           alt='ekibimiz'
           className={styles.crewPhoto}
         />

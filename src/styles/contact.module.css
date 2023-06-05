@@ -3,6 +3,12 @@
   --darkBlue: #003a7c;
   --white: #eff6ff;
   --lighBlue: #e6f1ff;
+
+   /* new colors */
+
+   --black: #000000;
+   --light-white: #fffdfc;
+   --light-grey: #f5f3f2;
 }
 
 .contactPageWrapper {

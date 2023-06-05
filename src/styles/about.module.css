@@ -3,6 +3,12 @@
   --darkBlue: #003a7c;
   --white: #eff6ff;
   --lighBlue: #e6f1ff;
+
+   /* new colors */
+
+   --black: #000000;
+   --light-white: #fffdfc;
+   --light-grey: #f5f3f2;
 }
 
 .aboutContainer {
@@ -22,7 +28,7 @@
 }
 
 .crewPhoto {
-  filter: sepia(100%) hue-rotate(190deg) saturate(150%);
+  /* filter: sepia(100%) hue-rotate(190deg) saturate(150%); */
   border-radius: 8px;
   margin-bottom: 3rem;
 }

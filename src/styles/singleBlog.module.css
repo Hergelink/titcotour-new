@@ -3,6 +3,12 @@
   --darkBlue: #003a7c;
   --white: #eff6ff;
   --lighBlue: #e6f1ff;
+
+  /* new colors */
+
+  --black: #000000;
+  --light-white: #fffdfc;
+  --light-grey: #f5f3f2;
 }
 
 .singlePostContainer {
@@ -17,18 +23,29 @@
 }
 
 h1 {
-    margin-top: 1rem;
-    margin-bottom: 0.2rem;
-    font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.8rem;
 }
 
 h2 {
-    margin-top: 1rem;
-    font-size: 1.3rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
 }
 
+.singlePostContainer p {
+  font-size: 1.1rem;
+}
 
-.callToActionDiv  {
+.singlePostContainer ul {
+  font-size: 1.1rem;
+}
+
+.singlePostContainer li {
+  margin-top: 0.2rem;
+}
+
+.callToActionDiv {
   margin-top: 2rem;
   max-width: 952px;
   margin-inline: auto;
@@ -60,4 +77,3 @@ h2 {
   padding: 5px 10px;
   font-weight: 700;
 }
-
