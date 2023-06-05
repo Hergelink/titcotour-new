@@ -123,6 +123,10 @@
   gap: 10px;
 }
 
+.servicesContainer h2 {
+  margin-top: 0;
+}
+
 .servicesContainer h3 {
   font-size: 1.9rem;
 }

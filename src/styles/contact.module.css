@@ -4,11 +4,11 @@
   --white: #eff6ff;
   --lighBlue: #e6f1ff;
 
-   /* new colors */
+  /* new colors */
 
-   --black: #000000;
-   --light-white: #fffdfc;
-   --light-grey: #f5f3f2;
+  --black: #000000;
+  --light-white: #fffdfc;
+  --light-grey: #f5f3f2;
 }
 
 .contactPageWrapper {
@@ -18,7 +18,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .contactContainer {
@@ -28,7 +27,8 @@
   grid-template-columns: 1fr;
   background-color: var(--darkBlue);
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .contactInfo {
