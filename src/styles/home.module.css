@@ -24,7 +24,7 @@
 }
 
 .heroImage {
-  width: 100%;
+  display: none;
 }
 
 .heroContextDiv {
@@ -230,6 +230,13 @@
 
   .heroImageContainer {
     width: 40%;
+  }
+
+  .heroImage {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   .heroContextDiv {

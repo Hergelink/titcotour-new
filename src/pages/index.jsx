@@ -17,17 +17,12 @@ export default function Home() {
     <Layout>
       <section>
         <div className={styles.heroContainer}>
-          <div className={styles.heroImageContainer} >
+          <div className={styles.heroImageContainer}>
             <StaticImage
               src='../images/hero-1.png'
               className={styles.heroImage}
               alt=''
             />
-            {/* <StaticImage
-              src='../images/44.jpeg'
-              className={styles.heroImage}
-              alt=''
-            /> */}
           </div>
           <div className={styles.heroContextDiv}>
             <h1>Kurumsal Seyahat Acentanız</h1>
@@ -50,7 +45,7 @@ export default function Home() {
         <div className={styles.textContentWrapper}>
           <div className={styles.textContent}>
             <div>
-              <StaticImage src='../images/hero-3.png' alt=''/>
+              <StaticImage src='../images/hero-3.png' alt='' />
             </div>
             <div>
               <h3>
@@ -272,7 +267,7 @@ export default function Home() {
         <div className={styles.callToActionWrapper}>
           <div className={styles.callToAction}>
             <div>
-              <StaticImage src='../images/hero-2.png' alt=''/>
+              <StaticImage src='../images/hero-2.png' alt='' />
             </div>
             <div className={styles.callToActionContext}>
               <h3>Hizmetlerimiz Bunlarla Sınırlı Değil</h3>
