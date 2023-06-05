@@ -6,7 +6,7 @@ import * as styles from '../styles/about.module.css';
 
 export default function Hakkımızda() {
   const currentYear = new Date().getFullYear();
-  const yearsOfOperation = currentYear - 1989;
+  const yearsOfOperation = currentYear - 1987;
   return (
     <Layout>
       <div className={styles.aboutContainer}>
