@@ -4,11 +4,11 @@
   --white: #eff6ff;
   --lighBlue: #e6f1ff;
 
-   /* new colors */
+  /* new colors */
 
-   --black: #000000;
-   --light-white: #fffdfc;
-   --light-grey: #f5f3f2;
+  --black: #000000;
+  --light-white: #fffdfc;
+  --light-grey: #f5f3f2;
 }
 
 .heroContainer {
@@ -20,11 +20,16 @@
   flex-direction: column-reverse;
   align-items: center;
   gap: 20px;
+}
 
+.heroImageContainer {
+  display: none;
 }
 
 .heroImage {
-  display: none;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .heroContextDiv {
@@ -156,21 +161,22 @@
 }
 
 .quickActionLinks {
-  background-color: var(--blue);
+  background-color: var(--light-grey);
   padding: 10px 10px;
+  border: 1px solid var(--black);
   border-radius: 50%;
 }
 
 .quickActionLinks:hover {
-  background-color: var(--darkBlue);
+  background-color: var(--lighBlue);
 }
 
-.quickCall, .quickMail{
+.quickCall,
+.quickMail {
   width: 25px;
   height: 25px;
   cursor: pointer;
 }
-
 
 /* Call to Action */
 
@@ -230,13 +236,7 @@
 
   .heroImageContainer {
     width: 40%;
-  }
-
-  .heroImage {
     display: block;
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
   }
 
   .heroContextDiv {
@@ -299,9 +299,6 @@
     font-size: 1.1rem;
     line-height: 1.65;
   }
-
- 
-  
 
   /* Call to Action */
 

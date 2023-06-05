@@ -83,7 +83,7 @@ export default function Home() {
               <div className={styles.contactIconsDiv}>
                 <a href='tel:4447013' className={styles.quickActionLinks}>
                   <StaticImage
-                    src='../images/phone-icon.png'
+                    src='../images/quickCall.png'
                     alt='Telefon'
                     className={styles.quickCall}
                   />
@@ -116,7 +116,7 @@ export default function Home() {
               <div className={styles.contactIconsDiv}>
                 <a href='tel:4447013' className={styles.quickActionLinks}>
                   <StaticImage
-                    src='../images/phone-icon.png'
+                    src='../images/quickCall.png'
                     alt='Telefon'
                     className={styles.quickCall}
                   />
@@ -149,7 +149,7 @@ export default function Home() {
               <div className={styles.contactIconsDiv}>
                 <a href='tel:4447013' className={styles.quickActionLinks}>
                   <StaticImage
-                    src='../images/phone-icon.png'
+                    src='../images/quickCall.png'
                     alt='Telefon'
                     className={styles.quickCall}
                   />
@@ -180,7 +180,7 @@ export default function Home() {
               <div className={styles.contactIconsDiv}>
                 <a href='tel:4447013' className={styles.quickActionLinks}>
                   <StaticImage
-                    src='../images/phone-icon.png'
+                    src='../images/quickCall.png'
                     alt='Telefon'
                     className={styles.quickCall}
                   />
@@ -211,7 +211,7 @@ export default function Home() {
               <div className={styles.contactIconsDiv}>
                 <a href='tel:4447013' className={styles.quickActionLinks}>
                   <StaticImage
-                    src='../images/phone-icon.png'
+                    src='../images/quickCall.png'
                     alt='Telefon'
                     className={styles.quickCall}
                   />
@@ -242,7 +242,7 @@ export default function Home() {
               <div className={styles.contactIconsDiv}>
                 <a href='tel:4447013' className={styles.quickActionLinks}>
                   <StaticImage
-                    src='../images/phone-icon.png'
+                    src='../images/quickCall.png'
                     alt='Telefon'
                     className={styles.quickCall}
                   />
