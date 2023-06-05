@@ -4,11 +4,11 @@
   --white: #eff6ff;
   --lighBlue: #e6f1ff;
 
-   /* new colors */
+  /* new colors */
 
-   --black: #000000;
-   --light-white: #fffdfc;
-   --light-grey: #f5f3f2;
+  --black: #000000;
+  --light-white: #fffdfc;
+  --light-grey: #f5f3f2;
 }
 
 .aboutContainer {
@@ -28,7 +28,6 @@
 }
 
 .crewPhoto {
-  /* filter: sepia(100%) hue-rotate(190deg) saturate(150%); */
   border-radius: 8px;
   margin-bottom: 3rem;
 }
@@ -85,6 +84,8 @@
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .callToActionDiv h3 {
@@ -131,15 +132,15 @@
   }
 
   /* call to action */
-  
+
   .callToActionDiv h3 {
     font-size: 1.4rem;
   }
-  
+
   .callToActionDiv p {
     font-size: 1.2rem;
   }
-  
+
   .callToActionBtn {
     border: 0;
     background-color: var(--white);

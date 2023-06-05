@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .contactContainer {
@@ -27,6 +28,7 @@
   grid-template-columns: 1fr;
   background-color: var(--darkBlue);
   border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .contactInfo {
