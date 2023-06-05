@@ -17,12 +17,17 @@ export default function Home() {
     <Layout>
       <section>
         <div className={styles.heroContainer}>
-          <div className={styles.heroImageContainer}>
+          <div className={styles.heroImageContainer} >
             <StaticImage
               src='../images/hero-1.png'
               className={styles.heroImage}
               alt=''
             />
+            {/* <StaticImage
+              src='../images/44.jpeg'
+              className={styles.heroImage}
+              alt=''
+            /> */}
           </div>
           <div className={styles.heroContextDiv}>
             <h1>Kurumsal Seyahat Acentanız</h1>
