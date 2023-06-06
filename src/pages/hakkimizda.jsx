@@ -76,7 +76,7 @@ export default function Hakkımızda() {
               alt='pasaport'
               className={styles.servicesIcons}
             />
-            <h3>Vize Süreç Takibi</h3>
+            <h3>Vize Başvuru / Süreç Takibi</h3>
           </div>
           <div className={styles.serviceCard}>
             <StaticImage
