@@ -41,7 +41,7 @@
 
 .heroContextDiv h1 {
   font-size: 2.2rem;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 }
 
 .heroButtonContainer {
@@ -65,8 +65,11 @@
   background-color: var(--darkBlue);
 }
 
-.heroButtonContainer a, button {
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+.heroButtonContainer a,
+button {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .heroButtonContainer a {
@@ -91,7 +94,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .textContent img {
@@ -124,11 +128,8 @@
 }
 
 .servicesContainer h2 {
+  font-size: 1.8rem;
   margin-top: 0;
-}
-
-.servicesContainer h3 {
-  font-size: 1.9rem;
 }
 
 .servicesGrid {
@@ -148,7 +149,6 @@
   border-radius: 8px;
 
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  
 }
 
 .servicesIcons {
@@ -196,9 +196,15 @@
   max-width: 1200px;
   margin-inline: auto;
   padding: 32px 32px;
-  background: linear-gradient(to right, rgb(0, 82, 212), rgb(67, 100, 247), rgb(111, 177, 252));
+  background: linear-gradient(
+    to right,
+    rgb(0, 82, 212),
+    rgb(67, 100, 247),
+    rgb(111, 177, 252)
+  );
 
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;

@@ -86,6 +86,12 @@
   align-items: flex-start;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background: linear-gradient(
+    to right,
+    rgb(0, 82, 212),
+    rgb(67, 100, 247),
+    rgb(111, 177, 252)
+  );
 }
 
 .callToActionDiv h3 {
