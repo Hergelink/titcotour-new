@@ -34,7 +34,7 @@ export default function Home() {
             </h2>
             <div className={styles.heroButtonContainer}>
               <button className={styles.servicesButon} onClick={handleScroll}>
-                Demo Talebi
+                Hizmetlerimiz
               </button>
               <a href='tel:4447013'>Hemen Arayın</a>
             </div>
