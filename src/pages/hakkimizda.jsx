@@ -115,9 +115,9 @@ export default function Hakkımızda() {
 }
 
 export function Head({ title, description }) {
-  const defaultTitle = 'Titco Tour - Hakkımızda';
+  const defaultTitle = 'Biletlazım - Hakkımızda';
   const defaultDescription =
-    'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde, 34 yıldan uzun';
+    'Kurumsal Seyahat Yönetimi ve Yazılım Çözümleri';
 
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;

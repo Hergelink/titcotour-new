@@ -69,7 +69,7 @@ export default function Footer() {
             </Link>
           </div>
           <div>
-            <p>© {currentYear} Titcotour. Bütün hakları saklıdır.</p>
+            <p>© {currentYear} Biletlazım.com Bütün hakları saklıdır.</p>
           </div>
         </div>
         <div className='thirdBlock'>

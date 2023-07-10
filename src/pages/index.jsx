@@ -25,16 +25,15 @@ export default function Home() {
             />
           </div>
           <div className={styles.heroContextDiv}>
-            <h1>Kurumsal Seyahat Acentanız</h1>
+            <h1>Kurumsal Seyahat Yazılımı</h1>
             <h2>
-              Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta
-              işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet
-              yelpazesinde, {yearsOfOperation} yıldan uzun süredir kurumsal
-              firmalara ayrıcalıklı hizmet veriyoruz.
+              Uçak bileti, otel rezervasyonu ve araç kiralama işlemlerini
+              kendiniz yapın sadece diğer hizmetlerimize ya da desteğe
+              ihtiyacınız olduğunda arayın.
             </h2>
             <div className={styles.heroButtonContainer}>
               <button className={styles.servicesButon} onClick={handleScroll}>
-                Hizmetlerimiz
+                Demo Talebi
               </button>
               <a href='tel:4447013'>Hemen Arayın</a>
             </div>
@@ -289,9 +288,9 @@ export default function Home() {
 }
 
 export function Head({ title, description }) {
-  const defaultTitle = 'Titco Tour - Kurumsal Seyahat Acentası';
+  const defaultTitle = 'Biletlazım.com - Kurumsal Seyahat Yazılımı';
   const defaultDescription =
-    'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde, 34 yıldan uzun';
+    'Kurumsal Seyahat Yönetimi ve Yazılım Çözümleri';
 
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;

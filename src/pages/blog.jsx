@@ -88,9 +88,9 @@ export const query = graphql`
 
 
 export function Head({ title, description }) {
-  const defaultTitle = 'Titco Tour - Blog';
+  const defaultTitle = 'Biletlazım - Blog';
   const defaultDescription =
-    'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde, 34 yıldan uzun';
+    'Kurumsal Seyahat Yönetimi ve Yazılım Çözümleri';
 
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;
