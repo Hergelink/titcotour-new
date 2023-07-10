@@ -30,7 +30,7 @@ export default function Header() {
               className='headerLogo'
             />
           </Link>
-          <span className='yearsOfOperation'>{yearsOfOperation}. Yıl</span>
+          
         </div>
 
         <div className='desktopMenu'>

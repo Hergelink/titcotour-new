@@ -10,7 +10,8 @@
 
   --black: #000000;
   --light-white: #fffdfc;
-  --light-grey: #f5f3f2;
+   /* --light-grey: #f5f3f2; */
+   --light-grey: #ffffff;
 }
 /* CSS RESET */
 
@@ -244,8 +245,13 @@ section {
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-bottom: 3rem;
+  
 }
+
+.titcoIcon {
+  width: 120px;
+}
+
 
 .tursabIcon {
   width: 60px;
@@ -256,6 +262,12 @@ section {
   width: 80px;
   height: 75px;
 }
+
+.declaration {
+  margin-bottom: 3rem;
+}
+
+
 
 @media only screen and (min-width: 48em) {
   .headerContainer {
@@ -339,5 +351,18 @@ section {
   .thirdBlock {
     justify-content: center;
     gap: 10px;
+  }
+
+  .declaration {
+    margin-inline: auto;
+  }
+
+  .declaration span {
+    font-style: italic;
+    color: var(--darkBlue);
+  }
+
+  .declaration span:hover {
+    color: var(--darkBlue);
   }
 }

@@ -74,6 +74,11 @@ export default function Footer() {
         </div>
         <div className='thirdBlock'>
           <StaticImage
+            src='../images/titcotour-logo.png'
+            alt='titcotour'
+            className='titcoIcon'
+          />
+          <StaticImage
             src='../images/tursab.png'
             alt='tursab'
             className='tursabIcon'
@@ -83,6 +88,9 @@ export default function Footer() {
             alt='iata'
             className='iataIcon'
           />
+        </div>
+        <div className='declaration'>
+          <span>Biletlazim.com bir Titcotour™ Markasidir</span>
         </div>
       </div>
     </footer>
