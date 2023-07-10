@@ -11,10 +11,10 @@ export default function NotFound() {
         <span></span>
         <h2>Aradığınız Sayfa Bulunamadı</h2>
         <div className={styles.linksDiv}>
-        <Link to='/'>Ana Sayfa</Link>
-        <Link to='/hakkimizda'>Hakkımızda</Link>
-        <Link to='/blog'>Blog</Link>
-        <Link to='/iletisim'>İletişim</Link>
+          <Link to='/'>Ana Sayfa</Link>
+          <Link to='/hakkimizda'>Hakkımızda</Link>
+          <Link to='/blog'>Blog</Link>
+          <Link to='/iletisim'>İletişim</Link>
         </div>
       </div>
     </Layout>
@@ -24,7 +24,7 @@ export default function NotFound() {
 export function Head({ title, description }) {
   const defaultTitle = '404 - Aradığınız sayfa bulunamadı';
   const defaultDescription =
-    'Kurumsal Seyahat Yönetimi ve Yazılım Çözümleri';
+    'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde 1987 yılından itibaren hizmet gösteren kurumsal seyahat acentanız';
 
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;

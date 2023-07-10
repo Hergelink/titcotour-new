@@ -87,8 +87,7 @@ export default function iletisim() {
 
 export function Head({ title, description }) {
   const defaultTitle = 'Biletlazım - İletişim';
-  const defaultDescription =
-    'Kurumsal Seyahat Yönetimi ve Yazılım Çözümleri';
+  const defaultDescription = 'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde 1987 yılından itibaren hizmet gösteren kurumsal seyahat acentanız';
 
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;

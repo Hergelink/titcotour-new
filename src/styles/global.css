@@ -10,8 +10,8 @@
 
   --black: #000000;
   --light-white: #fffdfc;
-   /* --light-grey: #f5f3f2; */
-   --light-grey: #ffffff;
+  /* --light-grey: #f5f3f2; */
+  --light-grey: #ffffff;
 }
 /* CSS RESET */
 
@@ -107,7 +107,12 @@ section {
 }
 
 .phoneBtn:hover {
-  background: linear-gradient(to right, rgb(0, 82, 212), rgb(67, 100, 247), rgb(111, 177, 252));
+  background: linear-gradient(
+    to right,
+    rgb(0, 82, 212),
+    rgb(67, 100, 247),
+    rgb(111, 177, 252)
+  );
 }
 
 .headerContainer {
@@ -245,13 +250,11 @@ section {
   display: flex;
   align-items: center;
   gap: 5px;
-  
 }
 
 .titcoIcon {
   width: 120px;
 }
-
 
 .tursabIcon {
   width: 60px;
@@ -267,7 +270,14 @@ section {
   margin-bottom: 3rem;
 }
 
+.declaration span {
+  font-style: italic;
+  color: var(--darkBlue);
+}
 
+.declaration span:hover {
+  color: var(--darkBlue);
+}
 
 @media only screen and (min-width: 48em) {
   .headerContainer {
@@ -355,14 +365,5 @@ section {
 
   .declaration {
     margin-inline: auto;
-  }
-
-  .declaration span {
-    font-style: italic;
-    color: var(--darkBlue);
-  }
-
-  .declaration span:hover {
-    color: var(--darkBlue);
   }
 }
