@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/Layout';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import * as styles from '../styles/blog.module.css';
 
 export default function Blog({ data }) {
@@ -20,7 +21,15 @@ export default function Blog({ data }) {
 
   return (
     <Layout>
-      <h1 className={styles.pageTitle}>Blog</h1>
+      <div className={styles.blogHeroContainer}>
+        <StaticImage
+          src='../images/44.jpeg'
+          imgStyle={{ objectFit: 'cover' }}
+          alt=''
+        />
+        <h1 className={styles.blogPageTitle}>Blog</h1>
+      </div>
+
       <div className={styles.blogContainer}>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
@@ -85,11 +94,10 @@ export const query = graphql`
   }
 `;
 
-
-
 export function Head({ title, description }) {
   const defaultTitle = 'Biletlazım - Blog';
-  const defaultDescription = 'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde 1987 yılından itibaren hizmet gösteren kurumsal seyahat acentanız';
+  const defaultDescription =
+    'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde 1987 yılından itibaren hizmet gösteren kurumsal seyahat acentanız';
 
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;
@@ -97,7 +105,7 @@ export function Head({ title, description }) {
   return (
     <>
       <title>{seoTitle}</title>
-      <meta name='description' content={seoDescription} />  
+      <meta name='description' content={seoDescription} />
     </>
   );
 }

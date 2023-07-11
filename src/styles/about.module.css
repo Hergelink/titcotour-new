@@ -12,15 +12,30 @@
    --light-grey: #ffffff;
 }
 
+.aboutHeroContainer {
+  position: relative;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.aboutHeroContainer img {
+  object-fit: center;
+}
+
+.aboutPageTitle {
+  font-size: 3.5rem;
+  position: absolute; 
+  color: orange;     
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
 .aboutContainer {
   max-width: 1200px;
   margin: 4rem auto;
   padding-left: 16px;
   padding-right: 16px;
-}
-
-.aboutContainer h1 {
-  font-size: 2.5rem;
 }
 
 .aboutContainer h2 {
@@ -115,6 +130,17 @@
 }
 
 @media only screen and (min-width: 48em) {
+
+  .aboutHeroContainer {
+    max-width: 1200px;
+    margin-inline: auto;
+    border-radius: 8px;
+  }
+
+  .aboutPageTitle {
+    font-size: 5rem;
+  }
+
   .servicesTitle {
     text-align: center;
     font-size: 1.5rem;

@@ -9,8 +9,14 @@ export default function Hakkımızda() {
   const yearsOfOperation = currentYear - 1987;
   return (
     <Layout>
+      <div className={styles.aboutHeroContainer}>
+        <StaticImage
+          src='../images/hero-plane.jpg'
+          alt='Bulutların altında uçan önden çekilmiş bir uçak'
+        />
+        <h1 className={styles.aboutPageTitle}>Hakkımızda</h1>
+      </div>
       <div className={styles.aboutContainer}>
-        <h1>Hakkımızda</h1>
         <h2>
           {yearsOfOperation} yıldır turizm sektöründe hizmet veren Turizm
           Acentamız, deneyimli ve profesyonel ekibimizle siz değerli
@@ -28,8 +34,8 @@ export default function Hakkımızda() {
           hizmetlerimizle sürekli büyümeyi sağlamaktır. Sürdürülebilir turizm
           anlayışıyla hareket ederek, doğal ve kültürel değerlerimizi koruyarak,
           tüm paydaşlarımızın beklentilerini karşılamak için çalışıyoruz.
-          Hizmetlerimiz:
         </h2>
+
         <h2>
           Siz değerli müşterilerimize, seyahatlerinizde güvenilir, kaliteli ve
           hızlı çözümler sunarak, iş süreçlerinizi verimli ve sorunsuz hale
@@ -38,12 +44,12 @@ export default function Hakkımızda() {
           çalışanlarınızın dünyayı keşfetmesine ve iş hedeflerinize ulaşmanıza
           destek oluyoruz.
         </h2>
+
         <StaticImage
           src='../images/ekip.jpg'
           alt='ekibimiz'
           className={styles.crewPhoto}
         />
-
         <h3 className={styles.servicesTitle}>Hizmetlerimiz:</h3>
         <div className={styles.servicesGrid}>
           <div className={styles.serviceCard}>
@@ -116,7 +122,8 @@ export default function Hakkımızda() {
 
 export function Head({ title, description }) {
   const defaultTitle = 'Biletlazım - Hakkımızda';
-  const defaultDescription = 'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde 1987 yılından itibaren hizmet gösteren kurumsal seyahat acentanız';
+  const defaultDescription =
+    'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde 1987 yılından itibaren hizmet gösteren kurumsal seyahat acentanız';
 
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;
