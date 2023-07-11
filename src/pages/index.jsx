@@ -29,8 +29,8 @@ export default function Home() {
             <h2>
               Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta
               işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet
-              yelpazesinde, {yearsOfOperation} yıldan uzun süredir kurumsal firmalara
-              ayrıcalıklı hizmet veriyoruz.
+              yelpazesinde, {yearsOfOperation} yıldan uzun süredir kurumsal
+              firmalara ayrıcalıklı hizmet veriyoruz.
             </h2>
             <div className={styles.heroButtonContainer}>
               <button className={styles.servicesButon} onClick={handleScroll}>
@@ -290,7 +290,8 @@ export default function Home() {
 
 export function Head({ title, description }) {
   const defaultTitle = 'Biletlazım.com - Kurumsal Seyahat Yazılımı';
-  const defaultDescription = 'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde 1987 yılından itibaren hizmet gösteren kurumsal seyahat acentanız';
+  const defaultDescription =
+    'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde 1987 yılından itibaren hizmet gösteren kurumsal seyahat acentanız';
 
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;

@@ -5,8 +5,6 @@ import '../styles/global.css';
 import MobileModal from './MobileModal';
 
 export default function Header() {
-  const currentYear = new Date().getFullYear();
-  const yearsOfOperation = currentYear - 1987;
   const [menuState, setMenuState] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -30,7 +28,6 @@ export default function Header() {
               className='headerLogo'
             />
           </Link>
-          
         </div>
 
         <div className='desktopMenu'>
@@ -52,7 +49,6 @@ export default function Header() {
         <button
           className='mobileMenuBtn'
           onClick={toggleMobileMenu}
-          role='button'
           tabIndex={0}
           onKeyDown={handleKeyDown}
           aria-label='Mobil menüyü açın'
