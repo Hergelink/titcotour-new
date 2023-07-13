@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
         <div className='thirdBlock'>
           <StaticImage
-            src='../images/titcotour-logo.png'
+            src='../images/new-titcotour-logo.png'
             alt='titcotour'
             className='titcoIcon'
           />
