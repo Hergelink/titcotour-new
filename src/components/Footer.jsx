@@ -90,7 +90,7 @@ export default function Footer() {
           />
         </div>
         <div className='declaration'>
-          <span>Biletlazim.com bir Titcotour™ Markasidir</span>
+          <span>Biletlazim.com bir Titcotour™ Markasıdır</span>
         </div>
       </div>
     </footer>
