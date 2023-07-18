@@ -289,7 +289,7 @@ export default function Home() {
 }
 
 export function Head({ title, description }) {
-  const defaultTitle = 'Biletlazım.com - Kurumsal Seyahat Acentasız';
+  const defaultTitle = 'Biletlazım.com - Kurumsal Seyahat Acentanız';
   const defaultDescription =
     'Uçak bileti, otel rezervasyonu, araç kiralama, vize ve sigorta işlemlerinden toplantı organizasyonuna kadar geniş bir hizmet yelpazesinde 1987 yılından itibaren hizmet gösteren kurumsal seyahat acentanız';
 
